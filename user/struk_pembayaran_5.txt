@@ -1,0 +1,9 @@
+===== Struk Pembayaran =====
+Nomor Meja: 5
+Waktu Pemesanan: 
+Maksimum Waktu: 
+Pesanan:
+- anggur (1) Rp 15.000
+: Rp 15
+Metode Pembayaran: Dana
+==============================

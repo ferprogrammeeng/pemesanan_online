@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tambahkan CSS ini untuk mengatur menu makanan dan minuman sejajar ke kanan */
+#menu-makanan,
+#menu-minuman {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    flex: 0 0 calc(30% - 20px); /* Lebar item-menu sekitar 30% dari lebar kontainer */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* CSS tambahan untuk styling */
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Untuk ukuran layar kecil (mobile), ubah tata letak menjadi kolom */
+@media (max-width: 768px) {
+    #menu-makanan,
+    #menu-minuman {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        flex: 0 0 100%;
+    }
+}
